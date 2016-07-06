@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Tiles configuration file -->
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/tiles/layouts/common.jsp">
+    <put-attribute name="footer" value="/WEB-INF/tiles/layouts/footer.jsp" />
+  </definition>
+  <definition name="home" extends="common">
+    <put-attribute name="title" value="Java Blog Aggregator" />
+    <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+  </definition>
+</tiles-definitions>
